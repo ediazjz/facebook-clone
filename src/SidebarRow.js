@@ -7,7 +7,7 @@ const SidebarRow = ({ src, Icon, title }) => {
       {src && <Avatar src={src} />}
       {Icon && <Icon />}
 
-      <p>{title}</p>
+      <h4>{title}</h4>
     </div>
   )
 }
