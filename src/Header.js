@@ -5,6 +5,11 @@ import FlagIcon from '@material-ui/icons/Flag';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
 import StorefrontIcon from '@material-ui/icons/Storefront';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import AddIcon from '@material-ui/icons/Add';
+import ForumIcon from '@material-ui/icons/Forum';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Avatar, IconButton } from '@material-ui/core';
 
 const Header = () => { 
   return (
@@ -37,7 +42,25 @@ const Header = () => {
         </div>
       </div>
       
-      <div className="header__right"></div>
+      <div className="header__right">
+        <div className="header__info">
+          <Avatar />
+          <h4>Edgar Díaz</h4>
+        </div>
+
+        <IconButton>
+          <AddIcon />
+        </IconButton>
+        <IconButton>
+          <ForumIcon />
+        </IconButton>
+        <IconButton>
+          <NotificationsIcon />
+        </IconButton>
+        <IconButton>
+          <ExpandMoreIcon />
+        </IconButton>
+      </div>
     </div>
   )
 }
