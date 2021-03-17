@@ -4,8 +4,11 @@ import './MessageSender.css';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import MoodIcon from '@material-ui/icons/Mood';
+import { useStateValue } from './StateProvider';
 
 const MessageSender = () => {
+  const [{ user }, dispatch] = useStateValue();
+
   const [form, setForm] = useState({
     message: '',
     image: ''
@@ -31,7 +34,7 @@ const MessageSender = () => {
   return (
     <div className="messageSender">
       <div className="messageSender__top">
-        <Avatar src="https://i.pravatar.cc/300" />
+        <Avatar src={user.photoURL} />
         <form>
           <input
             type="text"
@@ -39,7 +42,7 @@ const MessageSender = () => {
             value={form.message}
             onChange={handleChange}
             className="messageSender__input"
-            placeholder="What's on your mind?" />
+            placeholder={`What's on your mind, ${user.displayName}?`} />
           <input
             type="text"
             name="image"
