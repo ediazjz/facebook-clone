@@ -10,7 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="sidebar">
        <SidebarRow src="https://i.pravatar.cc/300" title="Edgar Díaz"/>
        <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
 
