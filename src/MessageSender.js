@@ -8,6 +8,7 @@ import { useStateValue } from './StateProvider';
 
 const MessageSender = () => {
   const [{ user }, dispatch] = useStateValue();
+  console.log(typeof(dispatch));
 
   const [form, setForm] = useState({
     message: '',

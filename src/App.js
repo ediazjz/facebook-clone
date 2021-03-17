@@ -8,6 +8,7 @@ import { useStateValue } from './StateProvider';
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
+  console.log(typeof(dispatch));
 
   return (
     <div className="app">
