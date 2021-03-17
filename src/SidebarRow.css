@@ -1,5 +1,5 @@
 .sidebarRow {
-  padding: .75rem;
+  padding: .5rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -11,7 +11,8 @@
 
 .sidebarRow > h4 {
   margin-left: 1.25rem;
-  font-weight: 400;
+  font-size: .9rem;
+  font-weight: 500;
 }
 .sidebarRow > .MuiSvgIcon-root {
   font-size: xx-large;

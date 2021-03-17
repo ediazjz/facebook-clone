@@ -18,12 +18,12 @@ const Header = () => {
         <img 
           src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
           alt="Facebook logo" />
-        <div className="header__input">
+        <label className="header__input">
           <SearchIcon />
           <input
             type="text"
             placeholder="Search Facebook"/>
-        </div>
+        </label>
       </div>
 
       <div className="header__middle">
@@ -47,7 +47,7 @@ const Header = () => {
       <div className="header__right">
         <div className="header__info">
           <Avatar />
-          <h4>Edgar Díaz</h4>
+          <h4>Edgar</h4>
         </div>
 
         <IconButton>

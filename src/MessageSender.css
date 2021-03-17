@@ -50,7 +50,7 @@
 }
 .messageSender__option:hover {
   background-color: #eff2f5;
-  border-radius: .75rem;
+  border-radius: .5rem;
 }
 .messageSender__option > span {
   margin-left: .5rem;
