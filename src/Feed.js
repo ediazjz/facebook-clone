@@ -10,17 +10,17 @@ const Feed = () => {
       <MessageSender />
 
       <Post 
-        profilePic="https://i.pravatar.cc/300"
-        username="Edgar Díaz"
+        profilePic="https://i.pravatar.cc/300?img=68"
+        username="Lore Ipsum Hernandez"
         timestamp="A few seconds ago"
-        message="Hello world!"
-        image="https://www.newzealand.com/assets/Tourism-NZ/Christchurch-Canterbury/8bb86abcfd/img-1536307813-4242-957-p-C4D67668-0642-F5C5-BC3A684C8BB1F331-2544003__aWxvdmVrZWxseQo_FocalPointCropWzI0MCw0ODAsNTAsNTMsNzUsImpwZyIsNjUsMi41XQ.jpg" />
+        message="Look at my cat!"
+        image="https://picsum.photos/id/40/600/300" />
       <Post 
-        profilePic="https://i.pravatar.cc/300"
-        username="Edgar Díaz"
-        timestamp="A few seconds ago"
-        message="Hello world!"
-        image="https://www.newzealand.com/assets/Tourism-NZ/Christchurch-Canterbury/8bb86abcfd/img-1536307813-4242-957-p-C4D67668-0642-F5C5-BC3A684C8BB1F331-2544003__aWxvdmVrZWxseQo_FocalPointCropWzI0MCw0ODAsNTAsNTMsNzUsImpwZyIsNjUsMi41XQ.jpg" />
+        profilePic="https://i.pravatar.cc/300?img=11"
+        username="Lore Ipsum López"
+        timestamp="An hour ago"
+        message="Just hustle!"
+        image="https://picsum.photos/id/4/600/300" />
     </div>
   )
 }
