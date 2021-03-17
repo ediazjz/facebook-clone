@@ -11,7 +11,7 @@
 .messageSender__top {
   padding-bottom: 1rem;
   display: flex;
-  border-bottom: 1px solid #eff2f5;
+  border-bottom: 1px solid lightgrey;
 }
 .messageSender__top > .MuiAvatar-root {
   margin-right: .75rem;
