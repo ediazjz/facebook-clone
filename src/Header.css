@@ -65,7 +65,6 @@
 .header__input > input {
   background-color: transparent;
   border: none;
-  outline-width: 0;
 }
 
 .header__option > .MuiSvgIcon-root {

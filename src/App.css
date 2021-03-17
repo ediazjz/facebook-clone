@@ -2,6 +2,10 @@
   height: 100vh;
   background-color: #f1f2f5;
 }
+.app input {
+  outline-width: 0;
+}
+
 .app__body {
   display: flex;
 }
