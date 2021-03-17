@@ -1,5 +1,10 @@
+:root {
+  --height-header: 3.5rem;
+}
+
 .header {
-  padding: 1rem 1.25rem;
+  height: var(--height-header);
+  padding: 0rem 1.25rem;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -10,6 +15,7 @@
 }
 
 .header__left {
+  padding: .45rem 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -42,6 +48,7 @@
 }
 
 .header__right {
+  padding: .25rem 0;
   display: flex;
 }
 
