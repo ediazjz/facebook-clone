@@ -11,7 +11,7 @@ const Post = ({ profilePic, username, timestamp, message, image }) => {
         <Avatar src={profilePic} />
         <div className="post__headerInfo">
           <span className="post__username">{username}</span>
-          <span className="post__timestamp">{timestamp}</span>
+          <span className="post__timestamp">{new Date(timestamp?.toDate()).toUTCString()}</span>
         </div>
       </div>
 
