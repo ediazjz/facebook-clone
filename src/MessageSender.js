@@ -5,6 +5,8 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import MoodIcon from '@material-ui/icons/Mood';
 import { useStateValue } from './StateProvider';
+import db from './firebase';
+import firebase from 'firebase';
 
 const MessageSender = () => {
   const [{ user }, dispatch] = useStateValue();
@@ -25,6 +27,14 @@ const MessageSender = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    db.collection('posts').add({
+      profilePic: user.photoURL,
+      username: user.displayName,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      message: form.message,
+      image: form.image
+    });
 
     setForm({
       message: '',
