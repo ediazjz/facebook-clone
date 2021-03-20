@@ -9,7 +9,8 @@ module.exports = {
           "input": "#eff2f5",
         },
         brand: {
-          "DEFAULT": "#2e81f4"
+          "DEFAULT": "#2e81f4",
+          "dark": "#166fe5"
         }
       }
     },

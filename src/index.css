@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .login__button {
+    @apply w-1/2 bg-brand hover:bg-brand-dark text-white font-bold rounded-lg !important;
+  }
+
   .header__option {
     /* my-1 px-6 */
     @apply mt-1 mb-3 px-4 flex items-center cursor-pointer;
