@@ -1,4 +1,10 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.storyReel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 .storyReel {
-  margin: 1.5rem 0;
-  display: flex;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

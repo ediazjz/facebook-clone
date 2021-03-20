@@ -1,13 +1,14 @@
 import Story from './Story';
 import './StoryReel.css';
 
-const StoryReel = () => {
+const StoryReel = ({ className }) => {
   return (
-    <div className="storyReel">
+    <div className={`storyReel w-screen mt-4 pl-4 flex flex-nowrap whitespace-nowrap overflow-auto ${className}`}>
       <Story
         image="https://picsum.photos/id/256/200/400"
         profileSrc="https://i.pravatar.cc/300?img=68"
-        title="Lore Ipsum Hernandez" />
+        title="Lore Ipsum Hernandez"
+        avatarClass="seen" />
       <Story
         image="https://picsum.photos/id/128/200/400"
         profileSrc="https://i.pravatar.cc/300?img=32"
