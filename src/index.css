@@ -26,10 +26,7 @@
 
   .messageSender__option {
     /* p-2 for desktop */
-    @apply p-1 flex items-center justify-center text-gray-500 rounded-lg cursor-pointer;
-  }
-  .messageSender__option:hover {
-    @apply bg-gray-input;
+    @apply p-1 flex items-center justify-center hover:bg-gray-input text-gray-500 rounded-lg cursor-pointer;
   }
   .messageSender__option > .MuiSvgIcon-root {
     @apply h-4 w-4;
