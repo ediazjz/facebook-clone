@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .header__option {
+    /* my-1 px-6 */
+    @apply mt-1 mb-3 px-4 flex items-center cursor-pointer;
+  }
+  .header__option:hover:not(.header__option--active) {
+    @apply bg-gray-input border-b-0 rounded-xl;
+  }
+  .header__option > .MuiSvgIcon-root {
+    @apply text-gray-500;
+  }
+  .header__option:hover > .MuiSvgIcon-root {
+    @apply text-brand
+  }
+  
+  .header__option--active {
+    @apply m-0 border-b-4 border-brand;
+  }
+  .header__option--active > .MuiSvgIcon-root {
+    @apply text-brand;
+  }
+}
+
 * {
   margin: 0;
 }

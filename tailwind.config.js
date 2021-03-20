@@ -6,6 +6,10 @@ module.exports = {
       colors: {
         gray: {
           "150": "#f1f2f5",
+          "input": "#eff2f5",
+        },
+        brand: {
+          "DEFAULT": "#2e81f4"
         }
       }
     },
