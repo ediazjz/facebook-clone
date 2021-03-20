@@ -23,6 +23,21 @@
   .header__option--active > .MuiSvgIcon-root {
     @apply text-brand;
   }
+
+  .messageSender__option {
+    /* p-2 for desktop */
+    @apply p-1 flex items-center justify-center text-gray-500 rounded-lg cursor-pointer
+  }
+  .messageSender__option:hover {
+    @apply bg-gray-input;
+  }
+  .messageSender__option > .MuiSvgIcon-root {
+    @apply h-4 w-4;
+  }
+  .messageSender__option > span {
+    /* ml-2 for desktop */
+    @apply ml-1 text-xs font-semibold;
+  }
 }
 
 * {
