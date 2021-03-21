@@ -46,6 +46,18 @@
   .seen {
     @apply border-gray-600 !important;
   }
+
+  .post:first-child {
+    @apply mt-2;
+  }
+
+  .post__option {
+    @apply h-8 my-1.5 mx-0.5 flex flex-1 items-center justify-center hover:bg-gray-input rounded cursor-pointer;
+  }
+  .post__option > span {
+    @apply ml-2;
+  }
+  
 }
 
 * {
