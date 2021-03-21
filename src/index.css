@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input {
+    @apply outline-none;
+  }
+  input::placeholder {
+    @apply opacity-75; 
+  }
+}
+
 @layer components {
   .login__button {
     @apply w-1/2 bg-brand hover:bg-brand-dark text-white font-bold rounded-lg !important;
