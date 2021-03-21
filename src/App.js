@@ -11,12 +11,12 @@ function App() {
   console.log(typeof(dispatch));
 
   return (
-    <div className="app">
+    <div className="bg-gray-150">
       {!user ? <Login /> : (
         <>
           <Header />
 
-          <div className="app__body">
+          <div className="flex">
             <Sidebar />
             
             <Feed />

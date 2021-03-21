@@ -14,7 +14,7 @@ const Sidebar = () => {
   console.log(typeof(dispatch));
 
   return (
-    <div className="sidebar">
+    <div className="sidebar hidden">
        <SidebarRow src={user.photoURL} title={user.displayName}/>
        <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
 

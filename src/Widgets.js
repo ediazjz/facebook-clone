@@ -2,7 +2,7 @@ import './Widgets.css';
 
 const Widgets = () => {
   return (
-    <div className="widgets">
+    <div className="widgets hidden">
       <h2>Built by:</h2>
       <div className="hola"></div>
       <div className="hola"></div>

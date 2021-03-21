@@ -1,5 +1,4 @@
 import { Button } from '@material-ui/core';
-import './Login.css';
 import { auth, provider } from './firebase';
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer';
@@ -20,16 +19,18 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
-      <div className="login__logo">
-        <img 
+    <div className="login h-screen grid place-items-center">
+      <div className="login__logo flex flex-col">
+        <img
+          className="h-36 object-contain" 
           src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
           alt="Facebook logo" />
-        <img 
+        <img
+          className="h-48 object-contain"
           src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg"
           alt="Facebook logo text" />
       </div>
-      <Button type="submit" onClick={signIn}>
+      <Button className="login__button" type="submit" onClick={signIn}>
         Sign In  
       </Button>
     </div>
