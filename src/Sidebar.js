@@ -1,4 +1,3 @@
-import './Sidebar.css';
 import SidebarRow from './SidebarRow';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
 import FlagIcon from '@material-ui/icons/Flag';
@@ -14,7 +13,8 @@ const Sidebar = () => {
   console.log(typeof(dispatch));
 
   return (
-    <div className="sidebar hidden">
+    <div className="sidebar w-3/12 py-4 px-2 hidden lg:block sticky top-14">
+      <ul>
        <SidebarRow src={user.photoURL} title={user.displayName}/>
        <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
 
@@ -24,7 +24,7 @@ const Sidebar = () => {
        <SidebarRow Icon={StorefrontIcon} title="Marketplace"/>
        <SidebarRow Icon={VideoLibraryIcon} title="Videos"/>
        <SidebarRow Icon={ExpandMoreIcon} title="More..."/>
-
+      </ul>
     </div>
   )
 }

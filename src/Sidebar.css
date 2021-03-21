@@ -1,8 +1,0 @@
-.sidebar {
-  height: calc(100vh - var(--height-header) - 1rem);
-  padding-top: 1rem;
-  padding: 1rem .5rem 0 .5rem;
-  position: sticky;
-  top: var(--height-header);
-  flex: 0.33;
-}

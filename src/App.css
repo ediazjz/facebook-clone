@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.sidebar {
+  /* 3.5rem of header height and 1 rem of margin */
+  height: calc(100vh - 4.5rem);
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .storyReel::-webkit-scrollbar {
   display: none;

@@ -37,6 +37,10 @@
     @apply text-brand;
   }
 
+  .sidebarRow > .MuiSvgIcon-root {
+    @apply text-4xl text-brand;
+  }
+
   .messageSender__option {
     /* p-2 for desktop */
     @apply p-1 md:p-1.5 flex items-center justify-center hover:bg-gray-input text-gray-500 rounded-lg cursor-pointer;
