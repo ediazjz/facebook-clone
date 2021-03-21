@@ -39,14 +39,14 @@
 
   .messageSender__option {
     /* p-2 for desktop */
-    @apply p-1 flex items-center justify-center hover:bg-gray-input text-gray-500 rounded-lg cursor-pointer;
+    @apply p-1 md:p-1.5 flex items-center justify-center hover:bg-gray-input text-gray-500 rounded-lg cursor-pointer;
   }
   .messageSender__option > .MuiSvgIcon-root {
-    @apply h-4 w-4;
+    @apply h-4 md:h-6 w-4 md:w-6;
   }
   .messageSender__option > span {
     /* ml-2 for desktop */
-    @apply ml-1 text-xs font-semibold;
+    @apply ml-1 md:ml-1.5 text-xs md:text-sm font-semibold;
   }
 
   .story:last-child {
