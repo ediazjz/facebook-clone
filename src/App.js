@@ -16,7 +16,7 @@ function App() {
         <>
           <Header />
 
-          <div className="flex">
+          <div className="w-full flex">
             <Sidebar />
             
             <Feed />

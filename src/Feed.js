@@ -17,7 +17,7 @@ const Feed = () => {
 
   return (
     // p-8 for desktop
-    <div className="feed w-full lg:w-9/12 xl:w-7/12 pb-4 md:pb-6 px-4 md:px-28 lg:px-16 xl:px-18 flex flex-col items-center justify-center">
+    <div className="feed w-full lg:w-9/12 xl:w-7/12 pb-4 md:pb-6 px-4 md:px-28 lg:px-16 xl:px-18 2xl:px-40 flex flex-col items-center justify-center">
       <StoryReel className="order-2 lg:order-1" />
       <MessageSender className="order-1 lg:order-2" />
 
