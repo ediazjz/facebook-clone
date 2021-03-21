@@ -17,9 +17,9 @@ const Feed = () => {
 
   return (
     // p-8 for desktop
-    <div className="feed w-full pb-4 md:pb-6 px-4 md:px-28 flex flex-col items-center justify-center">
-      <StoryReel className="order-2" />
-      <MessageSender className="order-1" />
+    <div className="feed w-full lg:w-9/12 xl:w-7/12 pb-4 md:pb-6 px-4 md:px-28 lg:px-16 xl:px-18 flex flex-col items-center justify-center">
+      <StoryReel className="order-2 lg:order-1" />
+      <MessageSender className="order-1 lg:order-2" />
 
       <div className="w-full flex flex-col order-3">
         {posts.map(post => (

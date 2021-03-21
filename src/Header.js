@@ -16,8 +16,8 @@ const Header = () => {
   console.log(typeof(dispatch));
 
   return (
-    <header className="header h-max md:h-14 w-screen mt-3 px-5 flex flex-wrap items-center justify-between sticky top-0 bg-white shadow-md z-50">
-      <div className="header__left w-full md:w-max mb-2 flex items-center space-x-3">
+    <header className="header h-max md:h-14 w-screen mt-3 md:mt-0 px-5 flex flex-wrap items-center justify-between sticky top-0 bg-white shadow-md z-50">
+      <div className="header__left w-full md:w-max mb-2 md:mb-0 flex items-center space-x-3">
         <img 
           className="h-10"
           src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
@@ -51,8 +51,8 @@ const Header = () => {
         </ul>
       </nav>
       
-      <div className="header__right lg:w-max mr-3 hidden lg:flex items-center">
-        <div className="header__info mr-3 flex items-center">
+      <div className="header__right lg:w-max hidden lg:flex items-center">
+        <div className="header__info mr-3 hidden xl:flex items-center">
           <Avatar src={user.photoURL} />
           <span className="ml-3">{user.displayName}</span>
         </div>

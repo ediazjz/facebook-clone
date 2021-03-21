@@ -1,14 +1,13 @@
-import { Avatar } from '@material-ui/core'
-import './SidebarRow.css'
+import { Avatar } from '@material-ui/core';
 
 const SidebarRow = ({ src, Icon, title }) => {
   return (
-    <div className="sidebarRow">
+    <li className="sidebarRow p-2 flex items-center space-x-4 xl:space-x-5 hover:bg-gray-300 rounded-xl cursor-pointer">
       {src && <Avatar src={src} />}
       {Icon && <Icon />}
 
-      <h4>{title}</h4>
-    </div>
+      <span className="text-base font-medium" >{title}</span>
+    </li>
   )
 }
 
