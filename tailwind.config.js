@@ -15,7 +15,10 @@ module.exports = {
           "DEFAULT": "#2e81f4",
           "dark": "#166fe5"
         }
-      }
+      },
+      spacing: {
+        "18": "4.5rem",
+      },
     },
   },
   variants: {
