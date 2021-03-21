@@ -42,7 +42,7 @@ const MessageSender = ({ className }) => {
   };
   
   return (
-    <div className={`messageSender mt-4 pt-3 pb-2.5 px-4 w-full flex flex-col bg-white rounded-2xl ${className}`}>
+    <div className={`messageSender mt-4 pt-3 pb-2.5 px-4 w-full flex flex-col bg-white rounded-2xl shadow ${className}`}>
       <div className="messageSender__top pb-4 flex items-center border-b border-gray-300">
         <Avatar src={user.photoURL} />
         <form className=" ml-3 flex flex-wrap flex-1 space-y-2">

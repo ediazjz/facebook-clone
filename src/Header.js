@@ -16,7 +16,8 @@ const Header = () => {
   console.log(typeof(dispatch));
 
   return (
-    <header className="header w-screen mt-3 px-5 flex flex-wrap items-center justify-between sticky top-0 bg-white z-50">
+    // 3-5rem for desktop
+    <header className="header h-max w-screen mt-3 px-5 flex flex-wrap items-center justify-between sticky top-0 bg-white shadow-md z-50">
       <div className="header__left w-full mb-2 flex items-center space-x-3">
         <img 
           className="h-10"
@@ -51,10 +52,10 @@ const Header = () => {
         </ul>
       </nav>
       
-      <div className="header__right hidden">
-        <div className="header__info">
+      <div className="header__right mr-3 hidden lg:flex items-center">
+        <div className="header__info mr-3 flex items-center">
           <Avatar src={user.photoURL} />
-          <span>{user.displayName}</span>
+          <span className="ml-3">{user.displayName}</span>
         </div>
 
         <IconButton>

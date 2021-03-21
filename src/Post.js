@@ -1,12 +1,11 @@
 import { Avatar } from '@material-ui/core';
-import './Post.css';
 import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
 import ShareOutlinedIcon from '@material-ui/icons/ShareOutlined';
 
 const Post = ({ profilePic, username, timestamp, message, image }) => {
   return (
-    <div className="post w-full mt-4 bg-white rounded-2xl">
+    <div className="post w-full mt-4 bg-white rounded-2xl shadow">
       <div className="post__header mb-3 pt-3 px-4 flex items-center relative">
         <Avatar className="mr-2" src={profilePic} />
         <div className="post__headerInfo flex flex-col">

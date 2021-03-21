@@ -1,8 +1,0 @@
-.story {
-  background-size: 100%;
-  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, .75);
-  transition: background-size 100ms ease-in;
-}
-.story:hover{
-  background-size: 102%;
-}

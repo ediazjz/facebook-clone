@@ -1,5 +1,4 @@
 import Story from './Story';
-import './StoryReel.css';
 
 const StoryReel = ({ className }) => {
   return (
