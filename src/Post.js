@@ -21,7 +21,7 @@ const Post = ({ profilePic, username, timestamp, message, image }) => {
         {image && <img className="w-full" src={image} alt=""/>}
       </div>
 
-      <div className={`post__options mb-1 mx-4 flex justify-evenly text-gray-500 ${!image && 'border-t'} border-gray-300`}>
+      <div className={`post__options h-11 mb-1 mx-4 flex justify-evenly text-gray-500 ${!image && 'border-t'} border-gray-300`}>
         <div className="post__option">
           <ThumbUpOutlinedIcon />
           <span>Like</span>
