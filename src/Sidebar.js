@@ -13,7 +13,7 @@ const Sidebar = () => {
   console.log(typeof(dispatch));
 
   return (
-    <div className="sidebar w-3/12 py-4 px-2 hidden lg:block sticky top-14">
+    <div className="sidebar w-3/12 xl:2/12 py-4 px-2 hidden lg:block sticky top-14">
       <ul>
        <SidebarRow src={user.photoURL} title={user.displayName}/>
        <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center"/>
