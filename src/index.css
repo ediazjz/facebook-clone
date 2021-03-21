@@ -17,8 +17,7 @@
   }
 
   .header__option {
-    /* my-1 px-6 */
-    @apply mt-1 mb-3 px-4 flex items-center cursor-pointer;
+    @apply my-1 py-1.5 px-4 md:px-5 lg:px-6 flex items-center cursor-pointer;
   }
   .header__option:hover:not(.header__option--active) {
     @apply bg-gray-input border-b-0 rounded-xl;
