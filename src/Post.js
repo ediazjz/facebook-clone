@@ -17,7 +17,7 @@ const Post = ({ profilePic, username, timestamp, message, image }) => {
 
       <div className="post__content">
         {/* pb-4 for desktop */}
-        <p className="pt-1 pb-2 px-4">{message}</p>
+        <p className="pt-1 pb-2 md:pb-3 px-4">{message}</p>
         {image && <img className="w-full" src={image} alt=""/>}
       </div>
 
