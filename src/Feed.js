@@ -17,11 +17,11 @@ const Feed = () => {
 
   return (
     // p-8 for desktop
-    <div className="feed w-full pb-4 px-4 flex flex-col items-center justify-center">
+    <div className="feed w-full pb-4 md:pb-6 px-4 md:px-28 flex flex-col items-center justify-center">
       <StoryReel className="order-2" />
       <MessageSender className="order-1" />
 
-      <div className="flex flex-col order-3">
+      <div className="w-full flex flex-col order-3">
         {posts.map(post => (
           <Post 
             key={post.id}
