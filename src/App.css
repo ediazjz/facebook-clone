@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.sidebar {
+.sidebar, .widgets {
   /* 3.5rem of header height and 1 rem of margin */
   height: calc(100vh - 4.5rem);
 }
